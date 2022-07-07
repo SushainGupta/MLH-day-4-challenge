@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Instrument Emulator</title>
+    <link rel="stylesheet" href="style.css"/>
+    </head>
+  
+  <body>
+    <!-- Audio elemens-->
+    <audio id="harp-flourish">
+      <source src="./sounds/harp-flourish.mp3" type="audio/mp3">
+      Hi, your browser does not support audio files.
+    </audio>
+    <audio id="acoustic-guitar"">
+      <source src="./sounds/acoustic-guitar.mp3" type="audio/mp3">
+      Hi, your browser does not support audio files.
+    </audio>
+    <audio id="rock-style-guitar">
+      <source src="./sounds/rock-style-guitar.mp3" type="audio/mp3">
+      Hi, your browser does not support audio files.
+    </audio>
+    <audio id="hip-hop-beat">
+      <source src="./sounds/hip-hop-beat.mp3" type="audio/mp3">
+      Hi, your browser does not support audio files.
+    </audio>
+    <audio id="piano">
+      <source src="./sounds/piano.mp3" type="audio/mp3">
+      Hi, your browser does not support audio files.
+    </audio>
+    <audio id="trumpet">
+      <source src="./sounds/trumpet.mp3" type="audio/mp3">
+      Hi, your browser does not support audio files.
+    </audio>
+
+  <!-- Creating buttons -->
+    <h1>Instrument Emulator</h1>
+      <div class="row">
+          <button id="button" onclick="toggleAudio('harp-flourish', 0)">
+            Harp flourish
+          </button>
+          <button onclick="toggleAudio('acoustic-guitar', 0)">
+            Acoustic Guitar
+          </button>
+          <button onclick="toggleAudio('trumpet', 0)">
+            Trumpet
+          </button>
+      </div>
+
+      <div class="row">
+        <button onclick="toggleAudio('rock-style-guitar', 0)">
+          Rock Style Guitar
+        </button>
+        <button onclick="toggleAudio('hip-hop-beat', 0)">
+          hip hop beat
+        </button>
+        <button onclick="toggleAudio('piano', 0)">
+          Piano
+        </button>
+      </div>
+
+  <!--JavaScript -->
+    <script src="script.js"></script>
+  </body>
+</html>
